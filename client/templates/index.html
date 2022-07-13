@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!... Created by Abenezer Alemayehu ...>
+<!... Date : 6/15/2022 ...>
+<html lang="en-us">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="{{ url_for('static', filename='icon.ico') }}">
+    <link rel="stylesheet" href="../static/style.css">
+    <title> Eth-Quiz </title>
+                  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="htps://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+</head>
+<body class="body">
+ <div class="alert-box">
+        <p class="alert"></p>
+    </div>
+    <header>
+        <div class="wrapper">
+            <div class="icon"><img src="../static/icon.png"></div>
+            <div class="logo">Eth-Quiz</div>
+            <div class="menubar">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+          
+         <div class="main-inner">
+             <h1>Make Fair Test<br><p> Make fair test to quailify your candidate with secure and trusted way.<br>
+             for job our pre-employement assesment tests identify the best candidate<br>
+             with bias-free. student also take exam without cheating by using AI and Visibilty.</p></h1>
+           <div class="login">
+                <div class="loginform">
+                  <div class="wel">
+                  Welcome To Eth-Quiz
+                  <div class="wr">sign in to continue</div>
+                  <div class="wr1">USERNAME :</div>
+                  <form action="{{ url_for('index') }}" method="post">
+                  <input type="text" id="username" name="username">
+                  <div class="wr1">PASSWORD :</div>
+                  <input type="text" id="password" name="password">
+                  <div class="wr1">CODE :</div>
+                  <input type="text" id="code" name="code" placeholder="subjectcode">
+                  <input type="submit" value="login" class="log" name="">
+                 </form>
+                  {% with message = get_flashed_messages() %}
+                  {% if messages %}
+                  {% for message in messages %}
+                  <div class="alert" role="alert"> {{messages}}</div>
+                 </div>
+                  {% endfor  %}
+                  {% endif %}
+                  {% endwith %}
+             </div>
+            </div>  
+         </div>
+         <div class="shadow one"></div>
+         <div class="shadow two"></div>
+    </main>
+    <nav class="nav-bar">
+       <ul>
+          <li class="active">
+              <a href="#">Home</a>
+          </li>
+          <li>
+              <a href="#">Pricing</a>
+          </li>
+          <li>
+              <a href="#">About Us</a>
+          </li>
+       </ul>
+    </nav>
+    <script>
+        const menubar = document.querySelector(".wrapper .menubar");
+        menubar.onclick = function() {
+            body = document.querySelector(".body");
+            body.classList.toggle("active");
+        }
+    </script>
+    <script>
+      function btn_clickevent(){
+        $.ajax({
+           url: "./Attendance.py",
+            context: document.body
+            });
+      
+      }
+    
+    </script>
+    
+</body>  
+</html>
