@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eth-Test</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <img src="img/logo.png" alt="">
+                    <h2 class="text-muted">ETH-TEST</h2>
+                </div>
+                <div class="close" id="btn-close">
+                    <span class="material-icons-sharp">
+                        close
+                    </span>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <a href="./TestAdder.html">
+                    <span class="material-icons-sharp">
+                        dashboard
+                    </span>
+                    <h3>Forms</h3>
+                </a>
+                <a href="./Students.html" > 
+                    <span class="material-icons-sharp">
+                        person_outline
+                    </span>
+                    <h3>Students</h3>
+                </a>
+                <a href="./Results.html" class="actived">
+                    <span class="material-icons-sharp">
+                        receipt_long
+                    </span>
+                    <h3>Results</h3>
+                </a>
+                <a href="./Messagers.html">
+                    <span class="material-icons-sharp">
+                        mail_outline
+                    </span>
+                    <h3>Messagers</h3>
+                    <span class="message-count">0</span>
+                </a>
+                 <a href="./Attendance.html">
+                    <span class="material-icons-sharp">
+                        checklist
+                    </span>
+                    <h3>Attendance</h3>
+                </a>
+                <a href="./Settings.html">
+                    <span class="material-icons-sharp">
+                        settings
+                    </span>
+                    <h3>Settings</h3>
+                </a>
+
+                <a class="logout">
+                    <span class="material-icons-sharp">
+                        logout
+                    </span>
+                    <h3 class="logout">Logout</h3>
+                </a>
+            </div>
+
+        </aside>
+
+
+        <main>
+            <h1>Dashboard</h1>
+
+            <div class="date">
+                <input type="date">
+            </div>
+
+     <!-----------end of  -------------------->
+
+            <div class="Admin-panel">
+                <h2>Student Result</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Student Name</th>
+                            <th>Id Number</th>
+                            <th>School</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Abenezer</td>
+                            <td>23242526</td>
+                            <td>Elbethel</td>
+                            <td class="warning">pending</td>
+                            <td class="primary">Details</td>
+                        </tr>
+                        <tr>
+                            <td>Robel</td>
+                            <td>23242578</td>
+                            <td>Elbethel</td>
+                            <td class="warning">Pending</td>
+                            <td class="primary">Details</td>
+                        </tr>
+                    </tbody>
+                </table>
+             
+            </div>
+            <!---------  END OF    --------->
+
+        </main>
+        <!---------  END OF MAIN   --------->
+
+        <div class="right">
+            <div class="top">
+                <button id="btn-menu">
+                    <span class="material-icons-sharp">
+                        menu
+                    </span>
+                </button>
+                <div class="theme-toggler">
+                    <span class="material-icons-sharp actived">
+                        light_mode
+                    </span>
+                    <span class="material-icons-sharp">
+                        dark_mode
+                    </span>
+                </div>
+                <div class="profile">
+                    <div class="info">
+                        <p>Hey, <b class="admin"></b></p>
+                        <div class="text-muted">Admin</div>
+                    </div>
+                    <div id="profile" class="profile-photo">
+                        <img src="<%= user.picture %>" alt="Admin">
+                    </div>
+                </div>
+            </div>
+            <!---------  END OF TOP   --------->
+
+            <div class="recent-updates">
+                <h2>Recent Updates</h2>
+                <div class="updates">
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="../images/002.png" alt="">
+                        </div>
+                        <div class="message">
+                            <p><b>Abebe Kebede</b> received his support from the hq.</p>
+                            <small>3 Minutes Ago</small>
+                        </div>
+                    </div>
+
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="./images/002.jpg" alt="">
+                        </div>
+                        <div class="message">
+                            <p><b>kebede alemu</b> kindly add these students in the database .</p>
+                            <small>3 Minutes Ago</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         
+           
+    <span class="aside-overview"></span>
+
+    <script src="./js/index.js"></script>
+    <script src="./js/home.js"></script>
+</body>
+
+</html>

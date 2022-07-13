@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eth-Test</title>
+    <link rel="stylesheet" href="./css/icon-uploader.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <img src="img/logo.png" alt="">
+                    <h2 class="text-muted">ETH-TEST</h2>
+                </div>
+                <div class="close" id="btn-close">
+                    <span class="material-icons-sharp">
+                        close
+                    </span>
+                </div>
+            </div>
+
+               <div class="sidebar">
+                 <a href="./TestAdder.html">
+                    <span class="material-icons-sharp">
+                        dashboard
+                    </span>
+                    <h3>Forms</h3>
+                </a>
+                <a href="./Students.html" > 
+                    <span class="material-icons-sharp">
+                        person_outline
+                    </span>
+                    <h3>Students</h3>
+                </a>
+                <a href="./Results.html" >
+                    <span class="material-icons-sharp">
+                        receipt_long
+                    </span>
+                    <h3>Results</h3>
+                </a>
+                <a href="./Messagers.html">
+                    <span class="material-icons-sharp">
+                        mail_outline
+                    </span>
+                    <h3>Messagers</h3>
+                    <span class="message-count">0</span>
+                </a>
+                 <a href="./Attendance.html">
+                    <span class="material-icons-sharp">
+                        checklist
+                    </span>
+                    <h3>Attendance</h3>
+                </a>
+                <a href="./Settings.html" class="actived">
+                    <span class="material-icons-sharp">
+                        settings
+                    </span>
+                    <h3>Settings</h3>
+                </a>
+
+                <a class="logout">
+                    <span class="material-icons-sharp">
+                        logout
+                    </span>
+                    <h3 class="logout">Logout</h3>
+                </a>
+            </div>
+
+        </aside>
+
+
+        <main>
+           <div class = "container">
+            <div class="uploader">   
+             <div class="card">
+	
+	           <img src="./img/default.jpeg" alt="" style="margin-right: 1000px; padding-top:10px; padding-bottom:10px">
+	           <div class="card_title">Abenezer Alemayehu</div>
+	           <div class='card_job'>Web Developer</div>
+	           
+	           <form action="/" method="POST" encType="multipart/form-data">
+	           <div class="hh3">upload profile photo</div>
+	           <input id = "files" type="file" name="sampleFile" class="btn-primary" accept="image/*"/>
+	           <label for="files">choose image</label>
+	           <input type="submit" class="btn btn-primary">
+        	   </form>
+	           
+	           </div>
+	         </div>
+           </div>	
+            <!---------  END OF   --------->
+           <div class = "container">
+              <div class="uploader">   
+               <div class="card2">
+                <div class="usr">Username: </div>
+                <div class="pas">Password: </div>
+	            <div class="ema">Email: </div>
+	             <input id="submit" type="submit" class="btn2 btn-primary2">
+	             <label for="submit">Save Changes</label> 
+                 </div>
+	            </div>
+	           </div> 
+          
+        </main>
+        <!---------  END OF MAIN   --------->
+
+       
+        <div class="right">
+            <div class="top">
+                <button id="btn-menu">
+                    <span class="material-icons-sharp">
+                        menu
+                    </span>
+                </button>
+                <div class="theme-toggler">
+                    <span class="material-icons-sharp actived">
+                        light_mode
+                    </span>
+                    <span class="material-icons-sharp">
+                        dark_mode
+                    </span>
+                </div>
+                <div class="profile">
+                    <div class="info">
+                        <p>Hey, <b class="admin"></b></p>
+                        <div class="text-muted">Admin</div>
+                    </div>
+                    <div id="profile" class="profile-photo">
+                        <img src="<%= user.picture %>" alt="Admin">
+                    </div>
+                </div>
+            </div>
+            <!---------  END OF TOP   --------->
+
+
+           
+    <span class="aside-overview"></span>
+
+    <script src="./js/index.js"></script>
+    <script src="./js/home.js"></script>
+</body>
+
+</html>
