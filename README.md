@@ -13,6 +13,11 @@ what are the features of the project?
       -> user-friendly
       -> face-recognition.
       
+difficult challenge i encounter in this project is:
+
+      -> integrating the face-recognition with the login.
+      -> test creator from the admin input
+       
 still there is unfinished work on this project so if ur interested let's talk.
 
 - ` Email:abenezeralemayehu1819@gmail.com `
