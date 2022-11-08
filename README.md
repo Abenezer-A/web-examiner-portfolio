@@ -13,7 +13,7 @@ what are the features of the project?
       -> user-friendly
       -> face-recognition.
       
-- still there is unfinished work on this project so if ur interested let's talk.
+still there is unfinished work on this project so if ur interested let's talk.
 
 - ` Email:abenezeralemayehu1819@gmail.com `
 - ` linkedin: abenezeralemayehu `
