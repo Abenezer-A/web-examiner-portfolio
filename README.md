@@ -7,10 +7,13 @@
 u can find the demo video on `https://youtu.be/iFg1kMHRmvQ`
 
 what are the features of the project?
+
       -> secured.
       -> admin-side.
       -> user-friendly
       -> face-recognition.
+      
 - still there is unfinished work on this project so if ur interested let's talk.
--` Email:abenezeralemayehu1819@gmail.com `
+
+- ` Email:abenezeralemayehu1819@gmail.com `
 - ` linkedin: abenezeralemayehu `
