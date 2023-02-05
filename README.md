@@ -4,7 +4,7 @@
 
 
 
--> i was inspired by MOE(ministry if education) because due to national-exam theft and biases the ministry want to make the exam to be online and secured to minimize the risk.
+i was inspired by MOE(ministry if education) because due to national-exam theft and biases the ministry want to make the exam to be online and secured to minimize the risk.
 
 u can find the demo video on `https://youtu.be/iFg1kMHRmvQ`
 
